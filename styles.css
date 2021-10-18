@@ -1,0 +1,156 @@
+/* Todo */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+	scroll-margin-top: 5rem;
+}
+
+h6{
+    font-size: 1rem;
+    font-weight: 400;
+	margin-top: 1rem;
+	margin-bottom: 0.25rem;
+}
+
+/* NavBar */
+
+.bg-dark-grey{
+    background-color: rgba(53,58,64,1.0);
+}
+
+.nav .navbar-nav{
+	margin-right: 10rem;
+}
+
+.nav-link{
+    font-weight: 400;
+    font-size: 16px;
+}
+
+body .navbar-dark .navbar-nav .link-verde.active{
+	color: #00ff00;
+}
+
+body .navbar-dark .navbar-nav .link-verde{
+	color: rgba(68,151,83,1.0);
+}
+
+body .navbar-dark .navbar-nav .link-verde:hover{
+	color: rgba(151,190,63,1.0);
+}
+
+/* Sección Carousel */
+
+.carousel{
+    position: relative;
+}
+
+.carousel-inner{
+    height: 98vh;
+    position: relative;
+}
+
+.carousel-item{
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-item:before{
+    content: "";
+    height: 98vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    opacity: 0.5;
+}
+
+.position-absolute{
+    top: 35%;
+    right: 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    max-width: 600px;
+    color: #fff;
+}
+
+.position-absolute h1{
+    text-align: right;
+}
+.position-absolute p{
+    text-align: right;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.btn-success{
+    background-color: rgba(39,167,71,1.0);
+    margin-left: 15px;
+}
+
+/* Sección Oradores */
+
+.react {
+	background-color: rgba(22,165,182,1.0);
+}
+
+/* Sección Lugar y fecha */
+
+#imagen-card{
+	height: 100%;
+}
+
+/* Sección Anotarse */
+
+.col-md-12 .text-muted{
+    font-size: 12px;
+	margin-bottom: 0.5rem;
+}
+
+/* Sección Compra */
+
+/* Formularios */
+
+form{
+    width: 50vw;
+    margin: 5px auto 15px;
+}
+
+
+form input::placeholder{
+    font-size: 16px;
+}
+
+form textarea::placeholder{
+    font-size: 20px;
+}
+
+.boton-formulario{
+    background-color: rgba(151,201,62,1.0);
+    color: #fff;
+    font-size: 20px;
+}
+
+#c-total{
+	background-color: rgba(204,229,255,1.0);
+	color: rgba(0,64,133,1.0);
+	opacity: 1;
+    padding: 0.75rem 1rem;
+    border-radius: .3rem;
+}
+
+/* Footer */
+
+footer{
+	background-image: linear-gradient(to right,#193644,#1b5271);
+}
+
+footer a:hover{
+    transform: scale(1.10);
+}

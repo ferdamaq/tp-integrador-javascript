@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<!--
+Fernando Daniel Maqueda
+Comisión #2157 de FullStack Java del Programa Codo a Codo 4.0 - 2021 - JavaScript - Trabajo Práctico Integrador
+-->
+<html lang="es">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
+		<title>Trabajo Práctico Integrador</title>
+		<link rel="stylesheet" href="styles.css"/>
+		<link rel="shortcut icon" type="image/png" href="images/codoacodo.png"/>
+	</head>
+	
+	<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="0" tabindex="0">
+		
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark-grey fixed-top">
+			<div class="container-fluid">
+				<a class="navbar-brand d-inline-block align-text-top" style="margin-left: 4.5rem; color: rgba(255,255,255,.55);" href="#"><img src="images/codoacodo.png" alt="logo" width="90rem" height="55rem"/>Conf Bs As</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="nav navbar-nav ms-lg-auto" style="margin-right: 5rem;">
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="#carousel">La conferencia</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#oradores">Los oradores</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#lugar-y-fecha">El lugar y la fecha</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#anotarse">Conviértete en orador</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link link-verde" id="comprar1" href="#compra">Comprar tickets</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		
+		<section class="carousel" id="carousel">
+			<div id="carousel-slide" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active" data-bs-interval="5000">
+						<img src="images/ba1.jpg" class="d-block w-100 h-100" alt="ba1"/>
+					</div>
+					<div class="carousel-item" data-bs-interval="5000">
+						<img src="images/ba2.jpg" class="d-block w-100 h-100" alt="ba2"/>
+					</div>
+					<div class="carousel-item" data-bs-interval="5000">
+						<img src="images/ba3.jpg" class="d-block w-100 h-100" alt="ba3"/>
+					</div>
+				</div>
+				<div class="position-absolute">
+					<h1>Conf Bs As</h1>
+					<p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del<br/>evento, a otros estudiantes de Codo a Codo y los oradores de primer<br/>nivel que tenemos para ti. Te esperamos!</p>
+					<div class="d-flex flex-row" style="justify-content: flex-end;">
+						<a href="#anotarse"><button type="button" class="btn btn-outline-light">Quiero ser orador</button></a>
+						<a href="#compra"><button type="button" class="btn btn-success" id="comprar2">Comprar tickets</button></a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="oradores">
+			<div class="container text-center text-uppercase">
+				<h6>Conoce a los</h6>
+				<h1>ORADORES</h1>
+			</div>
+			<div class="container">
+				<div class="row mb-5">
+					<div class="col-md-4">
+						<div class="card h-100">
+							<img class="card-img-top" src="images/steve.jpg" alt="Steve Jobs">
+							<div class="card-body">
+								<span class="badge bg-warning text-dark">JavaScript</span>
+								<span class="badge react">React</span>
+								<h5 class="card-title">Steve Jobs</h5>
+								<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et voluptatibus perferendis deleniti, totam fuga sequi iste! Facilis explicabo repellat ut similique incidunt? Ullam nos beatae, corporis facilis veniam magni ratione!</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card">
+							<img class="card-img-top w-100" src="images/bill.jpg" alt="Bill Gates">
+							<div class="card-body">
+								<span class="badge bg-warning text-dark">JavaScript</span>
+								<span class="badge react">React</span>
+								<h5 class="card-title">Bill Gates</h5>
+								<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et voluptatibus perferendis deleniti, totam fuga sequi iste! Facilis explicabo repellat ut similique incidunt? Ullam nos beatae, corporis facilis veniam magni ratione!</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card">
+							<img class="card-img-top w-100" src="images/ada.jpeg" alt="Ada Lovelace">
+							<div class="card-body">
+								<span class="badge bg-secondary">Negocios</span>
+								<span class="badge bg-danger">Startups</span>
+								<h5 class="card-title">Ada Lovelace</h5>
+								<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et voluptatibus perferendis deleniti, totam fuga sequi iste! Facilis explicabo repellat ut similique incidunt? Ullam nos beatae, corporis facilis veniam magni ratione!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="lugar-y-fecha" id="lugar-y-fecha">
+			<div class="card-group">
+				<div class="card" style="max-width: 100vw;">
+					<div class="row g-0">
+						<div class="col-md-6">
+							<img src="images/honolulu.jpg" class="img-fluid rounded-start" id="imagen-card" alt="Ciudad de Honolulu"/>
+						</div>
+						<div class="col-md-6 bg-dark-grey">
+							<div class="card-body text-white">
+								<h3 class="card-title">Bs As - Octubre</h3>
+								<p class="card-text" style="font-size: 0.93rem;">Buenos Aires es la provincia y localidad mas grande del estado de Argentina, en los Estados Unidos. Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sudeste de la isla de Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600 km² de superficie).</p>
+								<a href="#" target="_blank"><button type="button" class="btn btn-outline-light">Conocé más</button></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="mt-4" id="anotarse">
+			<div class="container text-center text-uppercase">
+				<h6>Conviértete en un</h6>
+				<h1>ORADOR</h1>
+			</div>
+			<p class="text-center">Anótate como orador para dar una <abbr title="charla ignite">charla ignite</abbr>. Cuéntanos de qué quieres hablar!</p>
+			<form id="registro" action="https://formspree.io/f/xpzkolvw" method="POST" target="_self">
+				<div class="row g-2">
+					<div class="col-md-6 mb-2">
+						<input type="text" class="form-control" id="r-firstname" name="First Name" placeholder="Nombre" required />
+					</div>
+					<div class="col-md-6 mb-2">
+						<input type="text" class="form-control" id="r-lastname" name="Last Name" placeholder="Apellido" required />
+					</div>
+					<div class="col-md-12">
+						<textarea class="form-control" id="r-message" name="Message" rows="4" placeholder="Sobre qué quieres hablar?" required></textarea>
+					</div>
+					<div class="col-md-12">
+						<p class="text-muted">Recuerda incluir un título para tu charla.</p>
+					</div>
+					<div class="d-grid gap-0">
+						<button type="submit" class="btn boton-formulario">Enviar</button>
+					</div>
+				</div>
+			</form>
+		</section>
+		
+		<section class="d-none mt-5" id="compra">
+			<div class="container w-50 px-0">
+				<div class="row gx-2 text-center">
+					<div class="col-md-4">
+						<div class="card border-primary h-100 rounded-0">
+							<div class="card-body px-0 py-1">
+								<h4 class="my-3">Estudiante</h4>
+								<p class="my-3 fs-5">Tienen un descuento</p>
+								<h5 class="my-3 fw-bold">80%</h5>
+								<p class="my-3 text-muted">* presentar documentación</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card border-success h-100 rounded-0">
+							<div class="card-body px-0 py-1">
+								<h4 class="my-3">Trainee</h4>
+								<p class="my-3 fs-5">Tienen un descuento</p>
+								<h5 class="my-3 fw-bold">50%</h5>
+								<p class="my-3 text-muted">* presentar documentación</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card border-warning h-100 rounded-0">
+							<div class="card-body px-0 py-1">
+								<h4 class="my-3">Junior</h4>
+								<p class="my-3 fs-5" style="">Tienen un descuento</p>
+								<h5 class="my-3 fw-bold">15%</h5>
+								<p class="my-3 text-muted">* presentar documentación</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container text-center text-uppercase">
+				<h6 class="mt-2">Venta</h6>
+				<h1 class="mb-3">VALOR DE TICKET $200</h1>
+			</div>
+			<form id="resumen" onsubmit="resumir(); return false;">
+				<div class="row g-2">
+					<div class="col-md-6 mb-2">
+						<input type="text" class="form-control" id="c-firstname" name="First Name" placeholder="Nombre" required />
+					</div>
+					<div class="col-md-6 mb-2">
+						<input type="text" class="form-control" id="c-lastname" name="Last Name" placeholder="Apellido" required />
+					</div>
+					<div class="col-md-12 mb-2">
+						<input type="email" class="form-control" id="c-email" name="E-mail" placeholder="Correo" required />
+					</div>
+					<div class="col-md-6 mb-2">
+						<label for="c-quantity" class="form-label">Cantidad</label>
+						<input type="number" min="1" class="form-control" id="c-quantity" name="Quantity" placeholder="cantidad" required />
+					</div>
+					<div class="col-md-6 mb-2">
+						<label for="c-category" class="form-label">Categoria</label>
+						<select class="form-select" id="c-category" name="Category" required>
+							<option selected disabled value="">Seleccione...</option>
+							<option value="Estudiante">Estudiante</option>
+							<option value="Trainee">Trainee</option>
+							<option value="Junior">Junior</option>
+						</select>
+					</div>
+					<div class="col-md-12 my-4">
+						<input type="text" class="form-control" id="c-total" name="Total" value="Total a Pagar: $" readonly />
+					</div>
+					<div class="d-grid gap-0 col-md-6">
+						<button type="reset" class="btn boton-formulario">Borrar</button>
+					</div>
+					<div class="d-grid gap-0 col-md-6">
+						<button type="submit" class="btn boton-formulario">Resumen</button>
+					</div>
+				</div>
+			</form>
+		</section>
+		
+		<footer class="container-fluid">
+			<div class="row row-cols-auto text-center d-flex align-items-center justify-content-center">
+				<div class="my-4 mx-4">
+					<a href="#" target="_blank" class="nav-link link-light active">Preguntas<br/>frecuentes</a>
+				</div>
+				<div class="my-4 mx-4">
+					<a href="#" target="_blank" class="nav-link link-light active"> Contáctanos</a>
+				</div>
+				<div class="my-4 mx-4">
+					<a href="#" target="_blank" class="nav-link link-light active">Prensa</a>
+				</div>
+				<div class="my-4 mx-4">
+					<a href="#" target="_blank" class="nav-link link-light active">Conferencias</a>
+				</div>
+				<div class="my-4 mx-4">
+					<a href="#" target="_blank" class="nav-link link-light active">Términos y<br/>condiciones</a>
+				</div>
+				<div class="my-4 mx-4">
+					<a href="#" target="_blank" class="nav-link link-light active">Privacidad</a>
+				</div>
+				<div class="my-4 mx-4">
+					<a href="#" target="_blank" class="nav-link link-light active">Estudiantes</a>
+				</div>
+			</div>
+		</footer>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+		<script src="script.js"></script>
+	</body>
+</html>
